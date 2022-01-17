@@ -1,11 +1,9 @@
+@import "tailwindcss/utilities";
 @import "~antd/dist/antd.css";
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 
 /* Your own custom component styles */
-
-@import "tailwindcss/utilities";
 
 .side_header_div {
   width: 45px;

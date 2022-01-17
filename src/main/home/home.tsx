@@ -4,7 +4,7 @@ export function Home() {
   const { staticText, setLocale } = useContext(UserContext);
   console.log(staticText);
   return (
-    <div>
+    <div className="bg-red-300">
       <button
         style={{ border: "1px solid red", margin: 10 }}
         onClick={() => {
