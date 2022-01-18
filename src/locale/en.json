@@ -1,5 +1,19 @@
 {
   "header": {
-    "home": "Home"
+    "products": "PRODUCTS",
+    "solutions": "SOLUTIONS",
+    "support": "SUPPORT",
+    "events": "EVENTS",
+    "education": "EDUCATION",
+    "company": "COMPANY",
+    "blog": "BLOG"
+  },
+  "footer": {
+    "information": "INFORMATION",
+    "contact": "CONTACT",
+    "newsletter": "NEWSLETTER SIGNUP",
+    "follow": "FOLLOW US",
+    "sitemap": "Site Map",
+    "address": "Address"
   }
 }

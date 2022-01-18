@@ -1,14 +1,13 @@
 import { Layout } from "antd";
+import { Header, Footer } from "@/components";
 
-const { Header, Footer, Content } = Layout;
+const { Content } = Layout;
 export function MainLayout({ Component, pageProps }) {
   return (
     <Layout>
-      <Header>Header</Header>
-      <Content>
-        <Component {...pageProps} />
-      </Content>
-      <Footer>Footer</Footer>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
     </Layout>
   );
 }

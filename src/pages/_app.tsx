@@ -3,6 +3,7 @@ import "../styles/index.css";
 import "../styles/ant_theme.less";
 import { MainLayout, ProductLayout } from "@/components";
 import { UserProvider } from "@/global";
+
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <UserProvider>

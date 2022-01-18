@@ -1,5 +1,19 @@
 {
   "header": {
-    "home": "Нүүр"
+    "products": "БАРААНУУД",
+    "solutions": "ШИЙДЭЛ",
+    "support": "ТУСЛАМЖ",
+    "events": "ҮЙЛ АЖИЛЛАГАА",
+    "education": "БОЛОВСРОЛ",
+    "company": "КОМПАНИ",
+    "blog": "БЛОГ"
+  },
+  "footer": {
+    "information": "МЭДЭЭЛЭЛ",
+    "contact": "ХОЛБОО БАРИХ",
+    "newsletter": "СОНИНГИЙН МЭДЭЭЛЭЛ",
+    "follow": "БИДНИЙГ ДАГААРАЙ",
+    "sitemap": "САЙТ МАП",
+    "address": "ХАЯ, БАЙРШИЛ"
   }
 }
