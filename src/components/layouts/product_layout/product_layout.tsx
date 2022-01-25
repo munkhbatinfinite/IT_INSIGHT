@@ -1,17 +1,20 @@
 import { Layout } from "antd";
-
-const { Header, Footer, Sider, Content } = Layout;
+import { Header, Footer } from "@/components";
+import { SideMenu } from "./side_menu";
+const { Sider, Content } = Layout;
 export function ProductLayout({ Component, pageProps }) {
   return (
-    <Layout>
-      <Header>Header</Header>
-      <Layout>
-        <Sider>Sider</Sider>
-        <Content>
+    <div>
+      <Header />
+      <Layout style={{ height: "100vh" }}>
+        <Sider breakpoint="lg" collapsedWidth="0">
+          <SideMenu />
+        </Sider>
+        <Content style={{ height: "100" }}>
           <Component {...pageProps} />
         </Content>
       </Layout>
-      <Footer>Footer</Footer>
-    </Layout>
+      <Footer />
+    </div>
   );
 }

@@ -1,3 +1,4 @@
+import { Products } from "@/main";
 export default function Demo() {
-  return <div>this is producsts</div>;
+  return <Products />;
 }

@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import {
   FacebookOutlined,
   InstagramOutlined,
@@ -19,7 +19,7 @@ export function Header() {
 
   return (
     <div
-      className=""
+      className=" border-b-4"
       onMouseEnter={() => set_hover(10)}
       onMouseLeave={() => set_hover(4)}
     >
@@ -28,7 +28,7 @@ export function Header() {
         className={`h-${hover}  text-white`}
       >
         <div
-          className={`flex justify-end pr-4 pt-2 space-x-5 ${
+          className={`flex justify-end pr-4 pt-2 pb-2 space-x-5 ${
             hover === 4 ? "invisible" : "visible"
           }`}
         >
@@ -60,13 +60,27 @@ export function Header() {
           src="https://www.grandstream.com/hs-fs/hubfs/raw_assets/public/Grandstream_Feb_2021/images/logo-grandstream-low-web.png?width=600&name=logo-grandstream-low-web.png"
         />
         <div className="flex cursor-pointer space-x-10 sticky">
-          <div>{staticText.header.products}</div>
-          <div>{staticText.header.solutions}</div>
-          <div>{staticText.header.support}</div>
-          <div>{staticText.header.events}</div>
-          <div>{staticText.header.education}</div>
-          <div>{staticText.header.company}</div>
-          <div>{staticText.header.blog}</div>
+          <div className="hover:underline hover:font-bold">
+            {staticText.header.products}
+          </div>
+          <div className="hover:underline hover:font-bold">
+            {staticText.header.solutions}
+          </div>
+          <div className="hover:underline hover:font-bold">
+            {staticText.header.support}
+          </div>
+          <div className="hover:underline hover:font-bold">
+            {staticText.header.events}
+          </div>
+          <div className="hover:underline hover:font-bold">
+            {staticText.header.education}
+          </div>
+          <div className="hover:underline hover:font-bold">
+            {staticText.header.company}
+          </div>
+          <div className="hover:underline hover:font-bold">
+            {staticText.header.blog}
+          </div>
         </div>
         <MobileMenu />
       </div>

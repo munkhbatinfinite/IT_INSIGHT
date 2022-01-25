@@ -2,7 +2,7 @@ import { UserContext } from "@/global";
 import { useContext } from "react";
 export function Footer() {
   const { staticText, setLocale, locale } = useContext(UserContext);
-
+  console.log(locale);
   return (
     <div style={{ background: "#295288", position: "relative" }}>
       <div className="h-64 flex justify-around text-white flex-row p-10 border-b-2 text-md">
@@ -24,18 +24,24 @@ export function Footer() {
         <div className="h-8">{staticText.footer.sitemap}</div>
         <div className="h-8">126 Brookline Ave, 3rd Floor Boston, MA 02215</div>
         <div className="h-8 flex space-x-2 cursor-pointer">
-          <div
-            onClick={() => setLocale("en")}
-            className={`border-${locale === "en" ? 2 : 0} border-white p-1 `}
-          >
-            ENGLISH
-          </div>
-          <div
-            onClick={() => setLocale("mn")}
-            className={`border-${locale === "mn" ? 2 : 0} border-white p-1 `}
-          >
-            МОНГОЛ
-          </div>
+          {locale === "en" ? (
+            <div className="border-2 p-1" onClick={() => setLocale("en")}>
+              ENGLISH
+            </div>
+          ) : (
+            <div className="m-1" onClick={() => setLocale("en")}>
+              ENGLISH
+            </div>
+          )}
+          {locale === "mn" ? (
+            <div className="border-2 p-1" onClick={() => setLocale("mn")}>
+              МОНГОЛ
+            </div>
+          ) : (
+            <div className="m-1" onClick={() => setLocale("mn")}>
+              МОНГОЛ
+            </div>
+          )}
         </div>
       </div>
     </div>
